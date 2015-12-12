@@ -1,6 +1,6 @@
 var gulp = require('gulp');
-var compass = require('gulp-compass');
 var path = require('path');
+var compass = require('gulp-compass');
 var minifyCSS = require('gulp-minify-css');
 
 gulp.task('style', function() {

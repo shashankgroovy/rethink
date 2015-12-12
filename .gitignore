@@ -3,6 +3,8 @@ node_modules/
 public/assets/.sass-cache
 public/assets/css/dist
 
-# Vim
+# log files
+npm-debug.log
+# Vim swap files
 *.swp
 *.swo

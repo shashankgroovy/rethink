@@ -1,8 +1,15 @@
 var express = require('express');
+var bodyParser = require('body-parser');
+
+// setup
 var app = express();
 var http = require('http').Server(app);
 
+// grab POST requrests
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
+
 app.use(function(req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
@@ -20,5 +27,5 @@ app.get('*', function(req, res) {
 })
 
 http.listen(8000, function() {
-  console.log('App live on http://localhost:8000');
+  console.log('Woot! http://localhost:8000');
 });

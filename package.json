@@ -2,9 +2,12 @@
   "name": "rethink",
   "version": "0.0.1",
   "description": "Rethink studios",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node server.js",
+    "dev": "NODE_ENV=development nodemon server.js",
+    "build": "gulp style"
   },
   "repository": {
     "type": "git",
@@ -18,11 +21,12 @@
   "dependencies": {
     "express": "~4.13.3",
     "angular": "~1.4.8",
-    "angular-route": "~1.4.8"
+    "angular-route": "~1.4.8",
+    "body-parser": "~1.14.1"
   },
   "devDependencies": {
-    "gulp-compass": "~2.1.0",
     "gulp": "~3.9.0",
+    "gulp-compass": "~2.1.0",
     "gulp-minify-css": "~1.2.2"
   }
 }
