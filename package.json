@@ -19,5 +19,10 @@
     "express": "~4.13.3",
     "angular": "~1.4.8",
     "angular-route": "~1.4.8"
+  },
+  "devDependencies": {
+    "gulp-compass": "~2.1.0",
+    "gulp": "~3.9.0",
+    "gulp-minify-css": "~1.2.2"
   }
 }

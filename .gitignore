@@ -1,5 +1,7 @@
 # Folders
 node_modules/
+public/assets/.sass-cache
+public/assets/css/dist
 
 # Vim
 *.swp
